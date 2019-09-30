@@ -1,1 +1,1 @@
-web: goWebApp
+web: bin/goWebApp
