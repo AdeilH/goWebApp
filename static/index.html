@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webApp</title>
+    <style>
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .button1 {background-color: #012763;}
+      </style>
+</head>
+<body bgcolor="#756766">
+    <script>
+        function playAudio(url){
+            var a = new Audio(url);
+            a.play();
+        }
+    </script>
+    <div class="button-container">
+        <h1 style="color:#012763; height: 200px;">Beats</h1>
+    </div>
+    <div class = "button-container">
+        <button class="button button1" onclick="playAudio('A.wav')">Beat 1</button>
+        <button class="button button1" onclick="playAudio('B.wav')">Beat 2</button>
+    </div> 
+    <div class=" button-container">
+        <button class="button button1" onclick="playAudio('C.wav')">Beat 3</button>
+        <button class="button button1" onclick="playAudio('D.wav')">Beat 4</button>
+    </div>   
+    
+</body>
+</html>
