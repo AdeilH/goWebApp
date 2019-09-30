@@ -1,1 +1,1 @@
-web: ./bin/goWebApp
+web: ./main $PORT
