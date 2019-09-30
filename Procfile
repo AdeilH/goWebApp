@@ -1,1 +1,1 @@
-web: ./bin/goWebApp $PORT
+web: PORT=:$PORT ./bin/goWebApp 
