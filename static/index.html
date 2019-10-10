@@ -11,7 +11,23 @@
         justify-content: center;
         align-items: center;
     }
+    .text-center{
+        text-align: center;
+    }
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.row {
+  display: flex;
+}
 
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
     .button {
         background-color: #4CAF50;
         border: none;
@@ -27,24 +43,59 @@
       .button1 {background-color: #012763;}
       </style>
 </head>
-<body bgcolor="#756766">
+<body>
+    <div class="text-center">
+    <audio controls volume="0.0">
+        <source src="nevergonnagiveyouup.wav" type="audio/ogg">
+        <source src="nevergonnagiveyouup.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    </div> 
     <script>
         function playAudio(url){
             var a = new Audio(url);
             a.play();
         }
     </script>
-    <div class="button-container">
-        <h1 style="color:#012763; height: 200px;">Beats</h1>
+    
+    <div class="text-center">
+        <h1 style="color:#012763;">Message to Recruiters</h1>
     </div>
-    <div class = "button-container">
-        <button class="button button1" onclick="playAudio('A.wav')">A</button>
-        <button class="button button1" onclick="playAudio('B.wav')">B</button>
-    </div> 
-    <div class=" button-container">
-        <button class="button button1" onclick="playAudio('C.wav')">C</button>
-        <button class="button button1" onclick="playAudio('D.wav')">D</button>
-    </div>   
+    <!--- https://www.youracclaim.com/badges/e02a6ac0-83c2-4d71-8890-9482b0e78463/linked_in_profile
+        https://www.youracclaim.com/badges/9a37245c-6fc3-4ad3-9251-fb5552e224a9/linked_in_profile
+        https://www.youracclaim.com/badges/9539aae9-b1f1-4c4d-ac7e-0b2849ed4100/linked_in_profile
+        --->
+    <div class="img">
+        <a href="https://www.linkedin.com/in/muhammad-adeel-hussain-6521a9a4/" target="_blank" rel="noopener noreferrer">
+            <img src="1.jpg" alt="Italian Trulli">
+        </a>
+    </div>
+    <div class="text-center">
+        <h3 style="color:#012763">Hi I am Adeel and I am looking for an entry level job in software development</h3>
+    </div>
+    <div class="text-center">
+            <h3 style="color:#012763">I am a quick learner and a team player. I won't disappoint you</h3> 
+    </div>
+    <div class="row">
+        <div class="column">
+        <a href="https://www.youracclaim.com/badges/e02a6ac0-83c2-4d71-8890-9482b0e78463/linked_in_profile" target="_blank">
+            <img src="data_science.png" alt="data_science certificate" style="width:176px;height:121px;">
+        </a>
+        </div>
+        <div class="column">
+                <a href="https://www.youracclaim.com/badges/9539aae9-b1f1-4c4d-ac7e-0b2849ed4100/linked_in_profile" target="_blank">
+                    <img src="itsupport.png" alt="itsupport certificate" style="width:180px;height:121px;">
+                
+                </a>
+        </div>
+        <div class="column">
+        <a href="https://www.youracclaim.com/badges/9a37245c-6fc3-4ad3-9251-fb5552e224a9/linked_in_profile" target="_blank">
+            <img src="machine_learning.png" alt="machine_learning certificate" style="width:176px;height:121px;">
+        </a>
+        </div>
+        
+    </div>
+      
     
 </body>
 </html>
